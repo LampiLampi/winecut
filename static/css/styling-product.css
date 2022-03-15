@@ -1,0 +1,81 @@
+:root {
+  --light-background: #3f424b;
+  --dark-background: #24262b;
+  --winecut-green: #60822d;
+  --test-color: #ce4242;
+  --pre-nav-bar-padding: 0.5% 4%;
+  --post-nav-bar-padding: 1% 4%;
+  --nav-bar-icon-transition: 0.85s ease;
+}
+
+.product {
+  padding: 5%;
+  background-color: var(--dark-background);
+}
+
+.img-slide {
+  width: 35%;
+}
+
+.card {
+  display: flex;
+  justify-content: space-around;
+  gap: 3rem;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: center;
+}
+
+.name {
+  font-size: 1.8rem;
+  text-align: center;
+  color: white;
+  padding: 2% 5% 5% 5%;
+  border-bottom: 5px solid var(--light-background);
+}
+
+p {
+  text-align: center;
+  color: white;
+}
+
+.description {
+  padding: 5%;
+  width: 600px;
+  border-bottom: 5px solid var(--light-background);
+  columns: 20em;
+  line-height: 1.75em;
+  height: 80%;
+}
+
+.product img {
+  display: block;
+  margin: auto;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.buy {
+  transition: 0.35s;
+  justify-content: center;
+  display: flex;
+  columns: 2;
+  gap: 4rem;
+}
+
+.buy > * {
+  margin: 0;
+  padding: 2% 3%;
+  background-color: var(--winecut-green);
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  white-space: nowrap;
+}
+
+.buy a:hover {
+  opacity: 0.5;
+}

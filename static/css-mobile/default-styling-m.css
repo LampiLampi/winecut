@@ -1,0 +1,115 @@
+:root {
+    --light-background: #3f424b;
+    --dark-background: #24262b;
+    --winecut-green: #60822d;
+    --test-color: #ce4242;
+    --pre-nav-bar-padding: 0.5% 4%;
+    --post-nav-bar-padding: 1% 4%;
+    --nav-bar-icon-transition: 0.85s ease;
+}
+
+header {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    background-color: var(--dark-background);
+}
+
+.header .li {
+    transition: 0.35s ease-in-out;
+}
+
+.navDescription {
+    position: absolute;
+    margin-top: -1000px;
+    margin-left: -1000px;
+    display: none;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #24262b;
+    border-bottom: 1px solid #60822d;
+}
+
+header ul li a {
+    transition: var(--nav-bar-icon-transition);
+    text-decoration: none;
+    color: white;
+    white-space: nowrap;
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+}
+
+.footer {
+    background-color: var(--dark-background);
+    padding: 70px 0;
+}
+
+.footer-col {
+    width: 100%;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col h4 {
+    border-bottom: 1px solid var(--winecut-green);
+    transition: 1s ease-in;
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col ul li a {
+    margin: 2% 0;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease-in;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}

@@ -1,0 +1,15 @@
+
+@keyframes arrowAnimation {
+  0% {
+  }
+
+  25% {
+    margin-top: 7%;
+    scale: 300%;
+  }
+
+  100% {
+    margin-top: 5%;
+    scale: 350%;
+  }
+}

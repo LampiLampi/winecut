@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS- Linking Desktop -->
+    <link rel="stylesheet" href="../css/styling-product.css" media="screen and (min-width: 550px)" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styling-product.css')}}" media="screen and (min-width: 550px)" />
+    <link rel="stylesheet" href="../css/default-styling.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/default-styling.css')}}" media="screen and (min-width: 550px)" />
+    <!-- CSS -Linking Mobile -->
+    <link rel="stylesheet" href="../css-mobile/styling-product-m.css" media="screen and (max-width:550px)">
+    <link rel="stylesheet" href="../css-mobile/default-styling-m.css" media="screen and (max-width:550px)">
+    <!-- Fonts & Bootstrap -->
+    <link rel="shortcut icon" href="../imgs/winecut-logo3.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/626c8b4022.js" crossorigin="anonymous"></script>
+    <title>Winecut - Green Cuts</title>
+</head>
+
+<body>
+    <header class="header">
+        <ul class="ul">
+            <li class="li">
+                <a class="navbar-link" href="../html/index.html">
+                    <i class="fas fa-home" class="nav-icons"></i>
+                    <p class="navDescription">Home</p>
+                </a>
+            </li>
+            <li class="li">
+                <a class="navbar-link" href="../html/project.html">
+                    <i class="fas fa-project-diagram" class="nav-icons"></i>
+                    <p class="navDescription">Project</p>
+                </a>
+            </li>
+            <li class="li">
+                <a class="navbar-link" href="../html/shop.html">
+                    <i class="fas fa-shopping-cart" class="nav-icons"></i>
+                    <p class="navDescription">Shop</p>
+                </a>
+            </li>
+        </ul>
+    </header>
+
+
+    <div class="product">
+        <h2 class="name">Lorem</h2>
+        <div class="card">
+            <img src="../imgs/glas-cutting.png" alt="">
+            <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque odio, dolores neque repellat velit impedit ipsum eligendi natus temporibus adipisci provident placeat quisquam sed fugiat quasi officia earum perspiciatis totam.</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4 class="footerBorder">JuniorCompany</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/project">Project</a></li>
+                        <li><a href="/shop">Shop</a></li>
+                    </ul>
+                    <h4 class="footerBorder">Produkte</h4>
+                    <ul>
+                        <li><a href="/amadeus">Amadeus-Lampe</a></li>
+                        <li><a href="/sissi">Sissi-Kerze</a></li>
+                        <li><a href="/kunigunde">Kunigunde-Behälter</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footerBorder">Contact</h4>
+
+                    <div class="social-links">
+                        <a href="mailto:juniorcompany@winecut.at" target="_blank">
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                        <a href="https://www.instagram.com/_winecut_" target="_blank">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

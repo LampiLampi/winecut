@@ -1,0 +1,55 @@
+:root {
+    --light-background: #3f424b;
+    --dark-background: #24262b;
+    --winecut-green: #60822d;
+    --test-color: #ce4242;
+    --pre-nav-bar-padding: 0.5% 4%;
+    --post-nav-bar-padding: 1% 4%;
+    --nav-bar-icon-transition: 0.85s ease;
+    --light-dark-grey-gradient: radial-gradient(circle, rgba(63, 66, 75, 1) 0%, rgba(36, 38, 43, 1) 100%);
+    --default-transition: 0.7s ease-in-out;
+}
+
+body {
+    background-color: var(--dark-background);
+    color: white;
+}
+
+.project-items {
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 7%;
+    flex-grow: 1;
+}
+
+.main-header {
+    border-bottom: 1px solid var(--winecut-green);
+    transition: var(--default-transition);
+}
+
+.project-items >* {
+    width: 500px;
+}
+
+.text > p {
+    line-height: 200%;
+    width: 450px;
+}
+
+.production > img {
+    width: 50%;
+    float:right; 
+}
+
+.team > img {
+    width: 50%;
+}
+
+.winecut-bottle-logo {
+    float: left;
+    width: 150px;
+    shape-outside: polygon(67% 0%, 67% 20%, 73% 25%, 90% 30%, 95% 33%, 98% 40%, 100% 100%, 0 100%);
+    margin-right: 2rem;
+}

@@ -1,0 +1,124 @@
+/*  This file contains the default styling such as the header and the footer
+    There is one file for the mobile and one for the desktop version, the difference is
+    the little arrow for the drop down menu & some difference in the values (sizing) */
+
+:root {
+    --light-background: #3f424b;
+    --dark-background: #24262b;
+    --winecut-green: #60822d;
+    --test-color: #ce4242;
+    --pre-nav-bar-padding: 0.5% 4%;
+    --post-nav-bar-padding: 1% 4%;
+    --nav-bar-icon-transition: 0.85s ease;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    background-color: var(--dark-background);
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #24262b;
+    border-bottom: 1px solid #60822d;
+}
+
+header ul li a {
+    padding: 1rem 0;
+    transition: var(--nav-bar-icon-transition);
+    text-decoration: none;
+    color: white;
+    white-space: nowrap;
+    font-size: 1.2rem;
+}
+
+header ul li a p {
+    transition: var(--nav-bar-icon-transition);
+    opacity: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.header .li {
+    transition: 0.35s ease-in-out;
+    padding: 0.5% 4%;
+}
+
+#drop-down {
+    position: absolute;
+    display: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.footer {
+    margin: 0;
+    background-color: var(--dark-background);
+    padding: 200px 0;
+}
+
+.footer-col {
+    width: 100%;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col h4 {
+    width: 100%;
+    border-bottom: 1px solid var(--winecut-green);
+    transition: 1s ease-in;
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 0.5%;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col ul li a {
+    width: fit-content;
+    margin: 3% 0;
+    font-size: 0.9rem;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    margin-top: 5%;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease-in;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}

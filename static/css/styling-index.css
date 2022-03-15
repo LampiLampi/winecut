@@ -1,0 +1,164 @@
+body {
+    background-color: var(--dark-background);
+}
+.welcome-text {
+    padding: 5% 0 8%;
+    background-color: var(--dark-background);
+    position: relative;
+    display: flex-box;
+    color: white;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.welcome-text p {
+    font-size: 1.7rem;
+}
+
+.welcome-text h4 {
+    margin-top: 0;
+    text-transform: capitalize;
+    display: inline-table;
+    border-right: 5px solid white;
+    animation: 1.2s cursor-blink infinite ease-in-out;
+}
+
+.logo img {
+    width: 40%;
+    display: block;
+    margin: 0 auto 10% auto;
+}
+
+.logo a {
+    background-color: var(--winecut-green);
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    border-radius: .3rem;
+    padding: 5%;
+    display: block;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.logo {
+    width: 100%;
+}
+
+#our-products-link{
+    transition: 0.7s ease-in-out;
+}
+
+@keyframes cursor-blink {
+    0% {
+        border-right: 3px solid white;
+    }
+    50% {
+        border-right: 3px solid var(--dark-background);
+    }
+    100% {
+        border-right: 3px solid white;
+    }
+}
+
+
+.project {
+    display: flex;
+    position: relative;
+    padding: 20% 5%;
+    background-color: var(--light-background);
+    border-bottom: 5px solid var(--winecut-green);
+    border-top: 5px solid var(--winecut-green);
+    /*background-image: url("../imgs/project2.png");*/
+}
+
+.project .text {
+    line-height: 2rem;
+    margin: 0 10%;
+    color: white;
+    background-color: var(--dark-background);
+    padding: 5%;
+    border-radius: 7px;
+    border-bottom: 3px solid var(--winecut-green);
+    border-left: 3px solid var(--winecut-green);
+}
+
+.project .text h2 {
+    font-size: 40px;
+    border-bottom: 1px solid white;
+}
+
+.project .text p {
+    font-size: 1.4rem;
+    color: white;
+    line-height: 200%;
+}
+
+.project .text > ul {
+    margin: 0;
+    list-style: circle;
+}
+
+.project .text ul > li {
+    margin: 0;
+    padding: 0;
+}
+
+.about {
+    padding: 20% 5%;
+    background-color: var(--dark-background);
+    border-bottom: 5px solid var(--winecut-green);
+}
+
+.about .text {
+    margin: 0 10%;
+    color: white;
+    background-color: var(--light-background);
+    padding: 10%;
+    border-radius: 7px;
+    border-bottom: 3px solid var(--winecut-green);
+    border-left: 3px solid var(--winecut-green);
+}
+
+.about .text h2 {
+    font-size: 35px;
+    border-bottom: 1px solid white;
+}
+
+.about .text p {
+    color: white;
+    line-height: 200%;
+}
+
+.contact {
+    padding: 25% 5%;
+    background-color: var(--light-background);
+    border-bottom: 5px solid var(--winecut-green);
+    /*background-image: url("../imgs/contact.png");*/
+}
+
+.contact .text {
+    margin: 0 10%;
+    color: white;
+    background-color: var(--dark-background);
+    padding: 10%;
+    border-radius: 7px;
+    border-bottom: 3px solid var(--winecut-green);
+    border-left: 3px solid var(--winecut-green);
+}
+
+.contact .text h2 {
+    font-size: 35px;
+    border-bottom: 1px solid white;
+}
+
+.contact .text p {
+    color: white;
+    line-height: 200%;
+}
+
+.contact a {
+    text-decoration: none;
+    color: var(--winecut-green);
+}

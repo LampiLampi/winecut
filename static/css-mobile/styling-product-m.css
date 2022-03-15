@@ -1,0 +1,68 @@
+:root {
+    --light-background: #3f424b;
+    --dark-background: #24262b;
+    --winecut-green: #60822d;
+    --test-color: #ce4242;
+    --pre-nav-bar-padding: 0.5% 4%;
+    --post-nav-bar-padding: 1% 4%;
+    --nav-bar-icon-transition: 0.85s ease;
+}
+
+.product {
+    padding: 5%;
+    background-color: var(--dark-background);
+}
+
+.name {
+    text-align: center;
+    color: white;
+    padding: 5%;
+    border-bottom: 5px solid var(--light-background);
+}
+
+p {
+    text-align: center;
+    color: white;
+}
+
+.description {
+    line-height: 175%;
+    padding: 5%;
+    border-bottom: 5px solid var(--light-background);
+    border-top: 5px solid var(--light-background);
+}
+
+.product img {
+    width: 75%;
+    display: block;
+    margin: auto;
+    border-radius: 3px;
+}
+
+.buy {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.buy a {
+    line-height: 200%;
+}
+
+.buy p {
+    line-height: 200%;
+}
+
+.buy > * {
+    margin: 0;
+    padding: 2% 3%;
+    background-color: var(--winecut-green);
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.buy a:hover {
+    opacity: 0.5;
+}

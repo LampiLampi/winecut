@@ -1,0 +1,79 @@
+:root {
+  --light-background: #3f424b;
+  --dark-background: #24262b;
+  --winecut-green: #60822d;
+  --test-color: #ce4242;
+  --pre-nav-bar-padding: 0.5% 4%;
+  --post-nav-bar-padding: 1% 4%;
+  --nav-bar-icon-transition: 0.85s ease;
+  --mobile-fontsize: 0.9rem;
+  --default-border-radius: 0.2rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--dark-background);
+  margin: 0;
+  padding: 0;
+}
+
+.shop-items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  flex-grow: 1;
+}
+
+.card {
+  margin: 2.5%;
+  width: 80%;
+}
+
+.card-content {
+  width: inherit;
+  height: inherit;
+  color: white;
+  margin: 10% 10% 10% 10%;
+}
+
+.card-content h2 {
+  border-bottom: 1px solid var(--winecut-green);
+}
+
+.card-content p {
+  font-size: var(--mobile-fontsize);
+  width: 80%;
+}
+
+.card-content a {
+  background-color: var(--winecut-green);
+  padding: 2%;
+  border-radius: 1.5rem;;
+  text-decoration: none;
+  color: white;
+  white-space: nowrap;
+}
+
+.card-content img {
+  width: 90%;
+  margin: 0;
+  border-radius: 0.4rem;
+}
+
+.button {
+  transition: var(--nav-bar-icon-transition);
+}
+
+.card-title {
+  transition: var(--nav-bar-icon-transition);
+}
+
+.button:hover {
+  opacity: 0.5;
+}
