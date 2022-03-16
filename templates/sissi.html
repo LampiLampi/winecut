@@ -6,18 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- other javascript -->
-    <script src="../javascript/script-product.js" defer></script>
+    <script src="../static/javascript/script-product.js" defer></script>
     <!-- slideshow -->
-    <script src="../javascript/script-image-slider.js" defer></script>
+    <script src="../static/javascript/script-image-slider.js" defer></script>
     <link rel="stylesheet" href="../css/styling-slide-show.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styling-slide-show.css')}}"/>
     <!-- CSS- Linking Desktop -->
     <link rel="stylesheet" href="../css/styling-product.css" media="screen and (min-width: 1140px)" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styling-product.css')}}" media="screen and (min-width: 1140px)"/>
     <link rel="stylesheet" href="../css/default-styling.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/default-styling.css')}}" media="screen and (min-width: 1140px)"/>
     <!-- CSS -Linking Mobile -->
     <link rel="stylesheet" href="../css-mobile/styling-product-m.css" media="screen and (max-width:1140px)">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css-mobile/styling-product-m.css')}}" media="screen and (max-width: 1140px)"/>
     <link rel="stylesheet" href="../css-mobile/default-styling-m.css" media="screen and (max-width:1140px)">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css-mobile/default-styling-m.css')}}" media="screen and (max-width: 1140px)"/>
     <!-- Fonts & Bootstrap -->
-    <link rel="shortcut icon" href="../imgs/winecut-logo3.png" />
+    <link rel="shortcut icon" href="../static/imgs/winecut-logo3.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
@@ -30,19 +35,19 @@
     <header class="header">
         <ul class="ul">
             <li class="li">
-                <a class="navbar-link" href="../html/index.html">
+                <a class="navbar-link" href="/">
                     <i class="fas fa-home" class="nav-icons"></i>
                     <p class="navDescription">Home</p>
                 </a>
             </li>
             <li class="li">
-                <a class="navbar-link" href="../html/project.html">
+                <a class="navbar-link" href="/project">
                     <i class="fas fa-project-diagram" class="nav-icons"></i>
                     <p class="navDescription">Project</p>
                 </a>
             </li>
             <li class="li">
-                <a class="navbar-link" href="../html/shop.html">
+                <a class="navbar-link" href="/shop">
                     <i class="fas fa-shopping-cart" class="nav-icons"></i>
                     <p class="navDescription">Shop</p>
                 </a>
@@ -59,13 +64,13 @@
                     <button class="carousel-button next" data-carousel-button="next">&#10563;</button>
                     <ul data-slides>
                         <li class="slide" data-active>
-                            <img src="../imgs/sissi1.png" alt="">
+                            <img src="../static/imgs/sissi1.png" alt="">
                         </li>
                         <li class="slide">
-                            <img src="../imgs/sissi3.png" alt="">
+                            <img src="../static/imgs/sissi3.png" alt="">
                         </li>
                         <li class="slide">
-                            <img src="../imgs/sissi2.png" alt="">
+                            <img src="../static/imgs/sissi2.png" alt="">
                         </li>
                     </ul>
                 </div>
@@ -77,7 +82,7 @@
                     Ducimus accusantium reprehenderit saepe.</p>
                 <div class="buy">
                     <p class="price-p">35€</p>
-                    <a href="../others/Bestellformular.pdf" download="Bestellformular" class="contract-download">Bestellformular herunterladen</a>
+                    <a href="../static/others/Bestellformular.pdf" download="Bestellformular" class="contract-download" target="_blank">Bestellformular herunterladen</a>
                 </div>
             </section>
         </div>

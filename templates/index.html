@@ -7,15 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CSS- Linking Desktop -->
     <link rel="stylesheet" href="../css/styling-index.css" media="screen and (min-width: 550px)" />
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styling-index.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styling-index.css')}}" media="screen and (min-width: 550px)"/>
 
     <link rel="stylesheet" href="../css/default-styling.css">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/default-styling.css')}}">
     <!-- CSS -Linking Mobile -->
     <link rel="stylesheet" href="../css-mobile/styling-index-m.css" media="screen and (max-width:550px)">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css-mobile/styling-index-m.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css-mobile/styling-index-m.css')}}" media="screen and (max-width:550px)">
     <link rel="stylesheet" href="../css-mobile/default-styling-m.css" media="screen and (max-width:550px)">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css-mobile/styling-index-m.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css-mobile/styling-index-m.css')}}" media="screen and (max-width:550px)">
     <!-- Fonts & Bootstrap -->
     <link rel="shortcut icon" href="../imgs/winecut-logo3.png" />
     <link rel="shortcut icon" href="{{ url_for('static', filename='imgs/winecut-logo3.png') }}">
@@ -33,19 +33,19 @@
     <header class="header">
         <ul class="ul">
             <li class="li">
-                <a class="navbar-link" href="../html/index.html">
+                <a class="navbar-link" href="/">
                     <i class="fas fa-home" class="nav-icons"></i>
                     <p class="navDescription">Home</p>
                 </a>
             </li>
             <li class="li">
-                <a class="navbar-link" href="../html/project.html">
+                <a class="navbar-link" href="/project">
                     <i class="fas fa-project-diagram" class="nav-icons"></i>
                     <p class="navDescription">Project</p>
                 </a>
             </li>
             <li class="li">
-                <a class="navbar-link" href="../html/shop.html">
+                <a class="navbar-link" href="/shop">
                     <i class="fas fa-shopping-cart" class="nav-icons"></i>
                     <p class="navDescription">Shop</p>
                 </a>
@@ -62,8 +62,8 @@
     </div>
 
     <div class="logo">
-        <img src="../imgs/winecut-large-logo-darkgrey.png" alt="">
-        <a href="../html/shop.html" id="our-products-link">Zu Unseren Produkten</a>
+        <img src="../static/imgs/winecut-large-logo-darkgrey.png" alt="">
+        <a href="/shop" id="our-products-link">Zu Unseren Produkten</a>
     </div>
 
     <footer class="footer">

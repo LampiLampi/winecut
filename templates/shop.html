@@ -7,12 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CSS- Linking Desktop -->
     <link rel="stylesheet" href="../css/styling-shop.css" media="screen and (min-width: 550px)" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styling-shop.css')}}" media="screen and (min-width: 550px)"/>
+
     <link rel="stylesheet" href="../css/default-styling.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/default-styling.css')}}">
+
     <!-- CSS -Linking Mobile -->
     <link rel="stylesheet" href="../css-mobile/styling-shop-m.css" media="screen and (max-width:550px)">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css-mobile/styling-shop-m.css')}}" media="screen and (max-width: 550px)"/>
     <link rel="stylesheet" href="../css-mobile/default-styling-m.css" media="screen and (max-width:550px)">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css-mobile/default-styling-m.css')}}" media="screen and (max-width: 550px)"/>
     <!-- Fonts & Bootstrap -->
-    <link rel="shortcut icon" href="../imgs/winecut-logo3.png" />
+    <link rel="shortcut icon" href="../static/imgs/winecut-logo3.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
@@ -26,19 +32,19 @@
     <header class="header">
         <ul class="ul">
             <li class="li">
-                <a class="navbar-link" href="../html/index.html">
+                <a class="navbar-link" href="/">
                     <i class="fas fa-home" class="nav-icons"></i>
                     <p class="navDescription">Home</p>
                 </a>
             </li>
             <li class="li">
-                <a class="navbar-link" href="../html/project.html">
+                <a class="navbar-link" href="/project">
                     <i class="fas fa-project-diagram" class="nav-icons"></i>
                     <p class="navDescription">Project</p>
                 </a>
             </li>
             <li class="li">
-                <a class="navbar-link" href="../html/shop.html">
+                <a class="navbar-link" href="/shop">
                     <i class="fas fa-shopping-cart" class="nav-icons"></i>
                     <p class="navDescription">Shop</p>
                 </a>
@@ -52,11 +58,11 @@
             <div class="card-content">
                 <div class="header-card">
                     <h2 class="card-title">Amadeus</h2>
-                    <a href="../html/amadeus.html" class="button">Mehr Erfahren</a>
+                    <a href="/amadeus" class="button">Mehr Erfahren</a>
                 </div>  
 
                 <p class="card-body">Die Lampe Amadeus, schafft eine perfekte, warme Stimmung, das Grüne Licht spiegelt die Nachhaltigkeit wieder.</p>
-                <img src="../imgs/amadeus-scaled.png" alt="">
+                <img src="../static/imgs/amadeus-scaled.png" alt="">
                 
             </div>
         </div>
@@ -65,11 +71,11 @@
             <div class="card-content">
                 <div class="header-card">
                     <h2 class="card-title">Sissi</h2>
-                    <a href="../html/sissi.html" class="button">Mehr Erfahren</a>
+                    <a href="/sissi" class="button">Mehr Erfahren</a>
                 </div>  
 
                 <p class="card-body">Sissi ist unsere Kerze aus höchster Qualität und bestem Bienenwachs.</p>
-                <img src="../imgs/sissi-scaled.png" alt="">
+                <img src="../static/imgs/sissi-scaled.png" alt="">
                 
             </div>
         </div>
@@ -78,11 +84,11 @@
             <div class="card-content">
                 <div class="header-card">
                     <h2 class="card-title">Kunigunde</h2>
-                    <a href="../html/kunigunde.html" class="button">Mehr Erfahren</a>
+                    <a href="/kunigunde" class="button">Mehr Erfahren</a>
                 </div>
                 
                 <p class="card-body">Kunigunde, der Aufbewahrungsbehälter von Winecut bietet stylistisch und praktisch die beste Ausstattung für Daheim.</p>
-                <img src="../imgs/kunigunde-scaled.png" alt="">
+                <img src="../static/imgs/kunigunde-scaled.png" alt="">
                 
             </div>
         </div>
@@ -124,4 +130,4 @@
 </body>
 
 </html>
-<script src="../javascript/script-shop.js"></script>
+<script src="../static/javascript/script-shop.js"></script>
