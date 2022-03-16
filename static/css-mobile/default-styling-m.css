@@ -80,7 +80,8 @@ header ul li a {
     position: relative;
 }
 
-.footer-col ul li a {
+.footer-col ul li a,
+.footer-col ul li p {
     margin: 2% 0;
     font-size: 16px;
     text-transform: capitalize;
