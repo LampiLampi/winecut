@@ -14,7 +14,7 @@ body {
     padding: 20% 0 20%;
     background-color: var(--dark-background);
     position: relative;
-    display: flex-box;
+    display: -ms-flexbox;
     color: white;
     font-size: 1rem;
     text-align: center;

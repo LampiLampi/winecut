@@ -25,9 +25,7 @@ body {
 }
 
 .navDescription {
-    position: absolute;
-    margin-top: -1000px;
-    margin-left: -1000px;
+    opacity: 0;
     display: none;
 }
 
@@ -46,9 +44,13 @@ header ul li a {
     text-decoration: none;
     color: white;
     white-space: nowrap;
-    padding: 0;
+    padding: 0.5% 4%;
     margin: 0;
     font-size: 1.5rem;
+}
+
+header ul li {
+    padding: 0.5% 4%;
 }
 
 .container {

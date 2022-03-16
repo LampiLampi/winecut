@@ -16,7 +16,7 @@ const colors = [
 ];
 
 let colorBorderSync = undefined;
-let navbarIconsSyncInverval = undefined;
+let navbarIconsSyncInterval = undefined;
 // defines the starting color -> winecut green
 let currentColor = '#60822d';
 
@@ -49,23 +49,20 @@ function choice(array) {
     }
 }
 
-
 header.addEventListener('mouseover', () => {
-    if (isMobile()) {
-        return;
+    if (!isMobile()) {
+        for (let item of navbarList) {
+            item.style.padding = '2% 4%';
+        }
+
+        for (let item of navDescription) {
+            item.style.opacity = '1';
+            item.style.padding = '0.5%';
+            item.style.margin = '0 0 0 30%';
+        }
     }
 
-    for (let item of navbarList) {
-        item.style.padding = '2% 4%';
-    }
-
-    for (let item of navDescription) {
-        item.style.opacity = '1';
-        item.style.padding = '0.5%';
-        item.style.margin = '0 0 0 30%';
-    }
-
-    navbarIconsSyncInverval = setInterval(syncColorsNavIcons, 50);
+    navbarIconsSyncInterval = setInterval(syncColorsNavIcons, 50);
 
 });
 
@@ -83,7 +80,7 @@ header.addEventListener('mouseout', () => {
         item.style.color = 'white';
     };
 
-    clearInterval(navbarIconsSyncInverval);
+    clearInterval(navbarIconsSyncInterval);
 });
 
 function syncColorsNavIcons() {

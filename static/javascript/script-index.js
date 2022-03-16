@@ -15,14 +15,14 @@ const footerHeaders = document.getElementsByClassName('footerBorder');
 const ourProductsLink = document.getElementById('our-products-link');
 
 const preNavBarPadding = '0.5% 4%'
-const postNavBarPadding = '1% 4%'
+const postNavBarPadding = '2% 4%'
 const defaultTransition = '0.7s ease-in-out';
 const minWidth = 550;
 const minWritingSpeed = 70;
 const maxWritingSpeed = 90;
 
 let colorBorderSync = undefined;
-let navbarIconsSyncInverval = undefined;
+let navbarIconsSyncInterval = undefined;
 let currentColor;
 let count = 0;
 let index = 0;
@@ -48,6 +48,7 @@ const colors = [
 
 function isMobile() {
     if (window.innerWidth <= minWidth) {
+        console.log('mobile')
         return true;
     }
 
@@ -144,14 +145,11 @@ function choice(array) {
 }
 
 header.addEventListener('mouseover', () => {
-    if (isMobile()) {
-        return;
-    }
-
-    for (let item of navbarList) {
-        item.style.padding = '2% 4%';
-    }
     if (!isMobile()) {
+        for (let item of navbarList) {
+            item.style.padding = '2% 4%';
+        }
+
         for (let item of navDescription) {
             item.style.opacity = '1';
             item.style.padding = '0.5%';
@@ -159,19 +157,13 @@ header.addEventListener('mouseover', () => {
         }
     }
 
-    // when hovered the color of the icons would not change to the 
-    // current cycle color so this has to be done while hovering the 
-    // header, after unhovering the color should change back to white
-    // see down below in the (unhover) mouseout function
-    navbarIconsSyncInverval = setInterval(syncColorsNavIcons, 50);
+    navbarIconsSyncInterval = setInterval(syncColorsNavIcons, 50);
+
 });
 
 header.addEventListener('mouseout', () => {
-    if (isMobile()) {
-        return;
-    }
     for (let item of navbarList) {
-        item.style.padding = '0.5% 4%'
+        item.style.padding = '0.5% 4%';
     };
 
     for (let item of navDescription) {
@@ -183,11 +175,12 @@ header.addEventListener('mouseout', () => {
         item.style.color = 'white';
     };
 
-    clearInterval(navbarIconsSyncInverval);
+    clearInterval(navbarIconsSyncInterval);
 });
 
+
 if (isMobile()) {
-    navbarIconsSyncInverval = setInterval(syncColorsNavIcons.bind(mobile = true), 50);
+    navbarIconsSyncInterval = setInterval(syncColorsNavIcons.bind(mobile = true), 50);
 }
 
 newDescription();

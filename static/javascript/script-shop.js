@@ -19,15 +19,6 @@ const colors = [
     '#e47e3b'
 ];
 
-const descriptions = [
-    '{upcycled glass.}',
-    '{fancy decoration.}',
-    '{adorable candles.}',
-    '{austrian quality}',
-    '{the sustainable change.}',
-    '{a green / clean cut.}',
-];
-
 let colorBorderSync = undefined;
 let navbarIconsSyncInverval = undefined;
 let currentColor = '#60822d';
@@ -57,7 +48,6 @@ function choice(array) {
         return array[Math.floor(Math.random() * array.length)];
     }
 }
-
 
 header.addEventListener('mouseover', () => {
     if (isMobile()) {
