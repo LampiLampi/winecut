@@ -40,6 +40,8 @@ body {
 
 .production > img {
     width: 50%;
+    margin-left: 1rem;
+    margin-bottom: 5rem;
     float:right; 
 }
 
@@ -51,5 +53,11 @@ body {
     float: left;
     width: 150px;
     shape-outside: polygon(67% 0%, 67% 20%, 73% 25%, 90% 30%, 95% 33%, 98% 40%, 100% 100%, 0 100%);
+    margin-right: 2rem;
+}
+
+.contact {
+    float: left;
+    width: 150px;
     margin-right: 2rem;
 }
